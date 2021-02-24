@@ -77,5 +77,17 @@ class RectangleTest {
         assertEquals(true, square.isSquare());
     }
 
+    @Test
+    void constructorWithInvalidLength() {
+        assertThrows(IllegalArgumentException.class, ()->
+                new Rectangle(-1,20));
+    }
+
+    @Test
+    void constructorWithInvalidWidth() {
+        assertThrows(IllegalArgumentException.class, ()->
+                new Rectangle(20,0));
+    }
+
 
 }
