@@ -1,4 +1,4 @@
-public class Rectangle {
+public class Rectangle implements GeometricShapes {
     private int length, width;
 
     public Rectangle(int length, int width) {
@@ -15,7 +15,7 @@ public class Rectangle {
         return length == width;
     }
 
-    public int getArea()
+    public double getArea()
     {
         return length*width;
     }
