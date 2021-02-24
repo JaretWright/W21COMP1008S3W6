@@ -18,7 +18,10 @@ public class Main {
         //This area will be used for testing our Employee's
         HourlyEmployee emp1 = new HourlyEmployee("Sven","Tankian", LocalDate.of(1987,2,24), 16);
         HourlyEmployee emp2 = new HourlyEmployee("Maria","Bella", LocalDate.of(2000,4,01), 20);
+        CommisionEmployee emp3 = new CommisionEmployee("Cosmo","Kramer",
+                                                        LocalDate.of(1976,4,01), 0.3);
         System.out.println(emp1);
         System.out.println(emp2);
+        System.out.println(emp3);
     }
 }
