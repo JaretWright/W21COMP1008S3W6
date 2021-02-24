@@ -65,5 +65,17 @@ class RectangleTest {
         assertEquals(80, square.getPerimeter());
     }
 
+    //This test will validate if a rectangle returns false
+    @Test
+    void isSquareRectangle() {
+        assertEquals(false, rectangle.isSquare());
+    }
+
+    //This test will validate if a square returns true
+    @Test
+    void isSquare() {
+        assertEquals(true, square.isSquare());
+    }
+
 
 }

@@ -6,9 +6,18 @@ public class Rectangle {
         this.width = width;
     }
 
+    /**
+     * returns true if the length and the width are the same
+     * @return
+     */
+    public boolean isSquare()
+    {
+        return length == width;
+    }
+
     public int getPerimeter()
     {
-        return 2*length+2*length;
+        return 2*length+2*width;
     }
 
     public int getLength() {
